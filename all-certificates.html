@@ -2,37 +2,181 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-   <!-- Link to Bootstrap Icons CSS -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-   <link href="style.css" rel="stylesheet">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>All Certificates</title>
+  <!-- Link to Bootstrap Icons CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Certificates</title>
+  <style>
+    table {
+      width: 100%; /* Tất cả các bảng sẽ có chiều rộng 100% */
+      border-collapse: collapse; /* Gộp các viền */
+      margin-bottom: 20px; /* Khoảng cách giữa các bảng */
+      table-layout: fixed; /* Cố định kích thước cột */
+    }
+    th, td {
+      border: 1px solid #ddd; /* Viền của các ô */
+      padding: 10px; /* Khoảng cách bên trong ô */
+      text-align: left; /* Căn trái nội dung */
+      word-wrap: break-word; /* Ngắt dòng nếu nội dung dài */
+    }
+    th {
+      background-color: #f4f4f4; /* Màu nền tiêu đề */
+    }
+    h3 {
+      margin-top: 40px; /* Khoảng cách phía trên mỗi nhóm bảng */
+    }
+
+    /* Đặt kích thước cột cố định */
+    th:nth-child(1), td:nth-child(1) {
+      width: 40%; /* Cột đầu tiên: Tên chứng chỉ */
+    }
+    th:nth-child(2), td:nth-child(2) {
+      width: 15%; /* Cột thứ hai: Ngày cấp */
+    }
+    th:nth-child(3), td:nth-child(3) {
+      width: 30%; /* Cột kỹ năng */
+    }
+    th:nth-child(4), td:nth-child(4) {
+      width: 15%; /* Cột thông tin xác thực */
+    }
+  </style>
 </head>
 <body>
   <section id="certificates">
     <h2>All Certificates</h2>
-    <ul class="list-group">
-      <!-- Add all the certificates here -->
-      <li class="list-group-item">
-        <i class="bi bi-linkedin" ></i> Find Your Dream Job: Interview Techniques and Resume Writing
-        <br>
-        <strong>Issued Aug 2024</strong>
-        <br>
-        <strong>Skills:</strong> Interview Preparation · Resume Writing
-        <br>
-        <a href="#">Show credential</a>
-      </li>
-      <li class="list-group-item">
-        <i class="bi bi-linkedin" ></i>  How to Use LinkedIn Learning
-        <br>
-        <strong>Issued Aug 2024</strong>
-        <br>
-        <strong>Skills:</strong> LinkedIn Learning
-        <br>
-        <a href="#">Show credential</a>
-      </li>
-      <!-- Add all other certificates similarly -->
-    </ul>
+
+    <!-- Table for Career Development -->
+    <h3>Career Development</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Certificate</th>
+          <th>Issued Date</th>
+          <th>Skills</th>
+          <th>Credential</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="bi bi-linkedin"></i> Find Your Dream Job: Interview Techniques and Resume Writing</td>
+          <td>Aug 2024</td>
+          <td>Interview Preparation · Resume Writing</td>
+          <td><a href="#">Show credential</a></td>
+        </tr>
+        <tr>
+          <td><i class="bi bi-linkedin"></i> Planning Your Career and Your Life</td>
+          <td>Aug 2024</td>
+          <td>Career Path Planning · Work-Life Balance</td>
+          <td><a href="#">Show credential</a></td>
+        </tr>
+        <tr>
+          <td><i class="bi bi-linkedin"></i> Writing a Cover Letter</td>
+          <td>Aug 2024</td>
+          <td>Cover Letters · Personal Branding</td>
+          <td><a href="#">Show credential</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Table for Data Science & Analytics -->
+    <h3>Data Science & Analytics</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Certificate</th>
+          <th>Issued Date</th>
+          <th>Skills</th>
+          <th>Credential</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="bi bi-linkedin"></i> SQL for Data Analysis</td>
+          <td>Aug 2024</td>
+          <td>SQL</td>
+          <td><a href="#">Show credential</a></td>
+        </tr>
+        <tr>
+          <td><i class="bi bi-linkedin"></i> Apache Spark Essential Training: Big Data Engineering</td>
+          <td>Jul 2024</td>
+          <td>Data Engineering · Apache Spark</td>
+          <td><a href="#">Show credential</a></td>
+        </tr>
+        <tr>
+          <td><i class="bi bi-linkedin"></i> Data Visualization for Data Analysis and Analytics (2020)</td>
+          <td>Jul 2024</td>
+          <td>Data Visualization · Data Analysis</td>
+          <td><a href="#">Show credential</a></td>
+        </tr>
+        <tr>
+          <td><i class="bi bi-linkedin"></i> Ethics and Law in Data Analytics</td>
+          <td>Jun 2024</td>
+          <td>Business Ethics · Data Analytics</td>
+          <td><a href="#">Show credential</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Table for Technology -->
+    <h3>Technology</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Certificate</th>
+          <th>Issued Date</th>
+          <th>Skills</th>
+          <th>Credential</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="bi bi-linkedin"></i> Kubernetes: Microservices</td>
+          <td>Aug 2024</td>
+          <td>Kubernetes · Microservices</td>
+          <td><a href="#">Show credential</a></td>
+        </tr>
+        <tr>
+          <td><i class="bi bi-linkedin"></i> Blockchain Basics</td>
+          <td>May 2024</td>
+          <td>Blockchain</td>
+          <td><a href="#">Show credential</a></td>
+        </tr>
+        <tr>
+          <td><i class="bi bi-linkedin"></i> Computer Vision for Data Scientists</td>
+          <td>May 2024</td>
+          <td>Computer Vision · Deep Learning</td>
+          <td><a href="#">Show credential</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Table for Personal Development -->
+    <h3>Personal Development</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Certificate</th>
+          <th>Issued Date</th>
+          <th>Skills</th>
+          <th>Credential</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="bi bi-linkedin"></i> Mastering Self-Leadership</td>
+          <td>Jul 2024</td>
+          <td>Personal Development · Accountability</td>
+          <td><a href="#">Show credential</a></td>
+        </tr>
+        <tr>
+          <td><i class="bi bi-linkedin"></i> Focus on What Matters and Minimize Distraction</td>
+          <td>Jul 2024</td>
+          <td>Priority Management</td>
+          <td><a href="#">Show credential</a></td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 </body>
 </html>

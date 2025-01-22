@@ -12,18 +12,27 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="profile-header">
-      <img src="images/ava.jpg" alt="Profile Picture" class="profile-img shadow">
-      <h1 class="fw-bold">Jencodoo</h1>
-      <p class="text-muted">Frontend Developer | Coffee Enthusiast</p>
-      <div class="social-icons">
-        <a href="https://github.com/jencodoo" target="blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/jencodoo" target="blank"><i class="bi bi-github"></i></a>
-      </div>
+
+<!-- Header Section -->
+<header>
+  <div class="profile-header">
+    <img id="avatar" src="images/ava.jpg" alt="Profile Picture" class="profile-img shadow">
+    <h1 class="fw-bold">Jencodoo</h1>
+    <p class="text-muted">Frontend Developer | Coffee Enthusiast</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/jen-codeee/" target="blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/jencodoo" target="blank"><i class="bi bi-github"></i></a>
     </div>
-  </header>
+  </div>
+  <!-- Cập nhật tệp nhạc với URL hợp lệ -->
+  <audio id="music" loop>
+    <source src="musics/raja-musik_taylor-swift-blank-space.mp3" type="audio/mp3">
+  </audio>
+</header>
+
+
+
+
 
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -175,36 +184,12 @@
                 Role: Frontend Team Leader – App BlueSkyCoffee (10/2024 - 12/2024)<br>
                 Description: Led a team to develop a POS app with real-time menu, orders, and Momo payments.
               </li>
-              <li class="list-group-item">
-                <strong>Hotel Finance Management System</strong> (10/2023 - 12/2023)<br>
-                Technology: Python Flask, MySQL, HTML, CSS, JavaScript<br>
-                Description: Developed a system to manage hotel operations, including room bookings, check-ins, and check-outs.
-              </li>
             </ul>
           </section>
 
           <section id="certificates" class="mt-4">
             <h2>Certificates</h2>
             <ul class="list-group">
-              <li class="list-group-item">
-                <i class="bi bi-linkedin"></i>
-                Find Your Dream Job: Interview Techniques and Resume Writing
-                <br>
-                <strong>Issued Aug 2024</strong>
-                <br>
-                <strong>Skills:</strong> Interview Preparation · Resume Writing
-                <br>
-                <a href="#">Show credential</a>
-              </li>
-              <li class="list-group-item">
-                <i class="bi bi-linkedin"></i> Kubernetes: Microservices
-                <br>
-                <strong>Issued Aug 2024</strong>
-                <br>
-                <strong>Skills:</strong> Kubernetes · Microservices
-                <br>
-                <a href="#">Show credential</a>
-              </li>
               <li class="list-group-item">
                 <i class="bi bi-linkedin"></i> Apache Spark Essential Training: Big Data Engineering
                 <br>
@@ -238,7 +223,7 @@
             <h2>Contact</h2>
             <p>Email: <a href="mailto:nguyentv2402@gmail.com">nguyentv2402@gmail.com</a></p>
             <p>Phone: <a href="tel:+0868609057">+086 860 9057</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/jen-codee" target="_blank">Visit my LinkedIn</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jen-codeee/" target="_blank">Jencodoo</a></p>
           </section>
 
           <section id="news">
@@ -261,10 +246,11 @@
     </div>
   </footer>
 
-  <!-- Music Player -->
-  <div class="music-player">
-    <button id="music-control">▶ Play Music</button>
-  </div>
+<!-- Music Player -->
+<div class="music-player">
+  <button id="music-control">▶ Play Music</button>
+  <audio id="music" src="musics/raja-musik_taylor-swift-blank-space.mp3" preload="auto"></audio>
+</div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>

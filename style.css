@@ -7,6 +7,7 @@ body {
     padding: 40px 20px;
     border-radius: 3px;
     text-align: center;
+    position: relative;
   }
   
   .profile-img {
@@ -15,6 +16,16 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
+    transition: transform 1s ease;
+  }
+
+  .profile-img.rotating {
+    animation: spin 5s linear infinite;  /* Xoay liên tục */
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
   
   .social-icons a {
@@ -60,15 +71,14 @@ body {
   padding-left: 0;
 }
 
-#skill-list li:nth-child(n+6) {
-  display: none;
-}
+  #skill-list li:nth-child(n+6) {
+    display: none;
+  }
 
-#see-more-btn {
-  margin-top: 10px;
-}
+  #see-more-btn {
+    margin-top: 10px;
+  }
 
-  
   
   .music-player {
     position: fixed;
@@ -91,6 +101,12 @@ body {
   
   .music-player button:hover {
     color: #128b94;
+  }
+
+  #music-control {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
   }
   
   .footer {

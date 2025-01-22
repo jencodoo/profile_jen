@@ -1,26 +1,28 @@
-const music = new Audio('music.mp3'); // Replace 'music.mp3' with your audio file path
-const musicControl = document.getElementById('music-control');
+// Lấy các phần tử cần thiết
+const avatar = document.getElementById("avatar");
+const music = document.getElementById("music");
 
-let isPlaying = false;
+// Bắt sự kiện khi trang web tải xong
+window.onload = function() {
+  // Cố gắng phát nhạc khi trang được tải
+  music.play().catch(function(error) {
+    console.log("Autoplay failed, click to start music:", error);
+  });
 
-// Play/Pause Music
-musicControl.addEventListener('click', () => {
-  if (isPlaying) {
-    music.pause();
-    musicControl.textContent = '▶ Play Music';
-  } else {
-    music.play();
-    musicControl.textContent = '⏸ Pause Music';
-  }
-  isPlaying = !isPlaying;
-});
-
-// Automatically play music on page load (optional)
-window.addEventListener('load', () => {
-  music.play();
-  isPlaying = true;
-  musicControl.textContent = '⏸ Pause Music';
-});
+  // Thêm sự kiện click vào ảnh đại diện để tạm dừng/tiếp tục xoay và nhạc
+  avatar.addEventListener("click", function() {
+    // Kiểm tra nếu nhạc đang phát hay không
+    if (music.paused) {
+      // Nếu nhạc bị dừng, phát nhạc và bắt đầu xoay
+      music.play();
+      avatar.classList.add("rotating");
+    } else {
+      // Nếu nhạc đang phát, dừng nhạc và dừng xoay avatar
+      music.pause();
+      avatar.classList.remove("rotating");
+    }
+  });
+};
 
 
 // Mảng chứa các màu gradient
