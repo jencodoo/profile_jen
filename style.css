@@ -1,0 +1,115 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .profile-header {
+    color: white;
+    padding: 40px 20px;
+    border-radius: 3px;
+    text-align: center;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons a {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #ffffff; /* Chuyển sang màu vàng khi hover */
+  }
+  
+  .no-underline {
+    text-decoration: none;
+  }
+   
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #128b94;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #4B9CD3;
+  }
+
+  .project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  #skill-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#skill-list li:nth-child(n+6) {
+  display: none;
+}
+
+#see-more-btn {
+  margin-top: 10px;
+}
+
+  
+  
+  .music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .music-player button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #128b94;
+    cursor: pointer;
+  }
+  
+  .music-player button:hover {
+    color: #128b94;
+  }
+  
+  .footer {
+    background-color: #128b94;
+    margin-top: 20px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+    color: #04213b;
+  }
+  
+
+  .bi-linkedin {
+    color: #0077B5; /* LinkedIn Blue color */
+  }
+
